@@ -1,0 +1,101 @@
+O Task Tracker é um projeto usado para rastrear e gerenciar suas tarefas. Nesta tarefa, você criará uma interface de linha de comando (CLI) simples para acompanhar o que precisa fazer, o que já fez e no que está trabalhando atualmente. Este projeto ajudará você a praticar suas habilidades de programação, incluindo o trabalho com o sistema de arquivos, o tratamento de entradas do usuário e a criação de um aplicativo CLI simples.
+
+Requisitos
+O aplicativo deve ser executado a partir da linha de comando, aceitar ações e entradas do usuário como argumentos e armazenar as tarefas em um arquivo JSON. O usuário deve ser capaz de:
+
+Adicionar, atualizar e excluir tarefas
+
+Marque uma tarefa como em andamento ou concluída.
+
+Liste todas as tarefas
+
+Liste todas as tarefas que foram realizadas.
+
+Liste todas as tarefas que não foram concluídas.
+
+Liste todas as tarefas que estão em andamento.
+
+Seguem algumas restrições para orientar a implementação:
+
+Você pode usar qualquer linguagem de programação para construir este projeto.
+
+Utilize argumentos posicionais na linha de comando para aceitar entradas do usuário.
+
+Utilize um arquivo JSON para armazenar as tarefas no diretório atual.
+
+O arquivo JSON deve ser criado caso ainda não exista.
+
+Utilize o módulo de sistema de arquivos nativo da sua linguagem de programação para interagir com o arquivo JSON.
+
+Não utilize nenhuma biblioteca ou framework externo para construir este projeto.
+
+Assegure-se de lidar com erros e casos extremos de forma adequada.
+
+Exemplo
+A lista de comandos e suas respectivas utilizações encontra-se abaixo:
+
+bash
+
+# Adding a new task
+task-cli add "Buy groceries"
+# Output: Task added successfully (ID: 1)
+# Updating and deleting tasks
+task-cli update 1 "Buy groceries and cook dinner"
+task-cli delete 1
+# Marking a task as in progress or done
+task-cli mark-in-progress 1
+task-cli mark-done 1
+# Listing all tasks
+task-cli list
+# Listing tasks by status
+task-cli list done
+task-cli list todo
+task-cli list in-progress
+Propriedades da Tarefa
+Cada tarefa deve ter as seguintes propriedades:
+
+idUm identificador único para a tarefa.
+
+descriptionDescrição resumida da tarefa
+
+status: O status da tarefa ( todo, in-progress, done)
+
+createdAtA data e a hora em que a tarefa foi criada.
+
+updatedAtA data e a hora em que a tarefa foi atualizada pela última vez.
+
+Certifique-se de adicionar essas propriedades ao arquivo JSON ao adicionar uma nova tarefa e atualizá-las ao atualizar uma tarefa existente.
+
+Começando
+Aqui estão alguns passos para ajudá-lo a começar a usar o projeto Task Tracker CLI:
+
+Configure seu ambiente de desenvolvimento
+Escolha uma linguagem de programação com a qual você se sinta confortável (por exemplo, Python, JavaScript, etc.).
+
+Certifique-se de ter um editor de código ou IDE instalado (por exemplo, VSCode, PyCharm).
+
+Inicialização do projeto
+Crie um novo diretório de projeto para sua CLI do Task Tracker.
+
+Inicialize um sistema de controle de versão (por exemplo, Git) para gerenciar seu projeto.
+
+Implementando funcionalidades
+Comece criando uma estrutura básica de CLI para lidar com as entradas do usuário.
+
+Implemente cada funcionalidade uma de cada vez, garantindo que os testes sejam feitos minuciosamente antes de passar para a próxima. Por exemplo, implemente primeiro a funcionalidade de adicionar tarefas, depois a de listar, em seguida a de atualizar, a de marcar como em andamento, etc.
+
+Testes e depuração
+Teste cada funcionalidade individualmente para garantir que funcionem conforme o esperado. Verifique o arquivo JSON para confirmar se as tarefas estão sendo armazenadas corretamente.
+
+Corrija quaisquer problemas que surgirem durante o desenvolvimento.
+
+Finalizando o Projeto
+Garantir que todas as funcionalidades sejam implementadas e testadas.
+
+Limpe seu código e adicione comentários onde necessário.
+
+Escreva um bom arquivo readme sobre como usar a sua CLI do Task Tracker.
+
+Ao final deste projeto, você terá desenvolvido uma ferramenta prática que poderá ajudar você ou outras pessoas a gerenciar tarefas com eficiência. Este projeto estabelece uma base sólida para projetos de programação mais avançados e aplicações no mundo real.
+
+Boa programação!
