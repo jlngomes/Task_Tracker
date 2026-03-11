@@ -6,3 +6,4 @@ if __name__ == '__main__':
 
     print(obj.add_task("teste_2"))
     print(obj.add_task("teste_1"))
+    print(obj.list_tasks())

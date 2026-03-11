@@ -30,7 +30,12 @@ class TaskHandler:
         pass
 
     def list_tasks(self, filtro: str=None):
+        if dict_storage:
+            ...
 
-        pass
+        for task in dict_storage.keys():
+            print(f"\n{dict_storage[task]}")
+
+
 
 
